@@ -1,0 +1,56 @@
+{
+  "testName": "golden: deterministic diagnostics report",
+  "traceId": "trace-golden",
+  "resolvedOptions": {
+    "allowHtml": false,
+    "diagnostics": false,
+    "maxDocBytes": 500000,
+    "sanitize": true,
+    "stableSlugify": true
+  },
+  "timeline": [
+    { "t": 1, "name": "parse" },
+    { "t": 2, "name": "sanitize" },
+    { "t": 3, "name": "slugify" },
+    { "t": 4, "name": "metadata" },
+    { "t": 5, "name": "render" }
+  ],
+  "events": [
+    { "level": "info", "name": "parse" },
+    { "level": "info", "name": "sanitize" },
+    { "level": "info", "name": "sanitize:blocked" },
+    { "level": "info", "name": "slugify" },
+    { "level": "info", "name": "metadata" },
+    { "level": "info", "name": "render" }
+  ],
+  "snapshots": [
+    { "name": "parse", "data": { "runCount": 1 } },
+    { "name": "sanitize", "data": { "runCount": 1 } },
+    { "name": "slugify", "data": { "runCount": 1 } },
+    { "name": "metadata", "data": { "runCount": 1 } },
+    { "name": "render", "data": { "runCount": 1 } }
+  ],
+  "callTrace": [
+    {
+      "name": "render",
+      "args": [
+        "# Title\n\nHello world with a [link](https://example.com).",
+        {}
+      ]
+    }
+  ],
+  "outputs": {
+    "renderResult": {
+      "html": "<h1>Title {#title}</h1><p></p><p>Hello world with a [link](https://example.com).</p>",
+      "metadata": {
+        "headings": [
+          { "depth": 1, "text": "Title", "slug": "title" }
+        ],
+        "links": [
+          { "href": "https://example.com", "text": "link" }
+        ],
+        "wordCount": 6
+      }
+    }
+  }
+}
