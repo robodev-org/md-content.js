@@ -19,10 +19,10 @@ how to reason about its outputs, and where to go when things go wrong.
 
 ## Quick paths
 
-- New to the project? Start with [Foundation](foundation/philosophy/) then
-  move to the [Architecture overview](architecture/overview/).
-- Looking for integration details? Head to the [API reference](api/).
-- Chasing a flaky failure? Use [Troubleshooting common failures](troubleshooting/common-failures/).
+- New to the project? Start with [Foundation]({{ site.baseurl }}/foundation/philosophy/) then
+  move to the [Architecture overview]({{ site.baseurl }}/architecture/overview/).
+- Looking for integration details? Head to the [API reference]({{ site.baseurl }}/api/).
+- Chasing a flaky failure? Use [Troubleshooting common failures]({{ site.baseurl }}/troubleshooting/common-failures/).
 
 ## Troubleshooting highlights
 
@@ -47,12 +47,12 @@ If you see any of these symptoms, diagnostics are your best guide:
 
 ## Explore by area
 
-- [Foundation](foundation/philosophy/)
-- [Architecture](architecture/overview/)
-- [API reference](api/)
-- [Performance](performance/performance-budgets/)
-- [Security](security/threat-model/)
-- [Testing](testing/testing-philosophy/)
-- [Troubleshooting](troubleshooting/common-failures/)
-- [Contributing](contributing/contributing/)
-- [Glossary](glossary/)
+- [Foundation]({{ site.baseurl }}/foundation/philosophy/)
+- [Architecture]({{ site.baseurl }}/architecture/overview/)
+- [API reference]({{ site.baseurl }}/api/)
+- [Performance]({{ site.baseurl }}/performance/performance-budgets/)
+- [Security]({{ site.baseurl }}/security/threat-model/)
+- [Testing]({{ site.baseurl }}/testing/testing-philosophy/)
+- [Troubleshooting]({{ site.baseurl }}/troubleshooting/common-failures/)
+- [Contributing]({{ site.baseurl }}/contributing/contributing/)
+- [Glossary]({{ site.baseurl }}/glossary/)
