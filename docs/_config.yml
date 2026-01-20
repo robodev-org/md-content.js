@@ -1,5 +1,6 @@
 title: md-content-factory
 markdown: kramdown
+baseurl: md-content.js
 highlighter: rouge
 permalink: pretty
 kramdown:
